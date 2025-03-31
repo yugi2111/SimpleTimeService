@@ -1,0 +1,13 @@
+aws_region         = "ap-south-1"
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+ecs_cluster_name   = "simpletimeservice-cluster"
+ecs_service_name   = "simpletimeservice-service"
+ecs_task_family    = "simpletimeservice-task"
+container_image    = "891254006071.dkr.ecr.ap-south-1.amazonaws.com/simpletimeservice:latest"
+container_port     = 5000
+memory             = 512
+cpu                = 256
+assign_public_ip   = true
+iam_role_name      = "simpletimeservice-execution-role"
+iam_policy_name    = "simpletimeservice-policy"
